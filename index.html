@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolo del prezzo del biglietto del treno</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+      <div id="form">
+        <form class="d-flex wrap container-small">
+          <div>
+            <label for="nomeCognome">Nome Cognome</label>
+            <input type="text" id="nomeCognome" />
+          </div>
+          <div>
+            <label for="kmViaggio">km da percorrere</label>
+            <input type="number" id="kmViaggio" />
+          </div>
+          <div>
+            <label for="casellaSelezione">Fascia di età</label>
+            <select id="casellaSelezione">
+              <option value="Sconto applicato 20%">Under 18</option>
+              <option value="Prezzo Intero">Maggiorenne</option>
+              <option value="Sconto applicato 40%">Over 65</option>
+            </select>
+          </div>
+        </form>
+        <button id="btn1" class="btn-ticket">Genera</button>
+        <button id="btn2" class="btn-ticket">Annulla</button>
+      </div>
+      <h1 id="titoloBiglietto" class="d-none">IL TUO BIGLIETTO</h1>
+      <div id="ticket" class="d-none">
+        <div>
+          <h3>DETTAGLIO PASSEGGERI</h3>
+          <div class="d-flex">
+            <div class="titolo">
+              Nome passeggero
+              <div id="nome"></div>
+            </div>
+            <div class="titolo">
+              Offerta
+              <div id="offerta"></div>
+            </div>
+            <div class="titolo">
+              Carrozza
+              <div id="carrozza"></div>
+            </div>
+            <div class="titolo">
+              Codice CP
+              <div id="codice"></div>
+            </div>
+            <div class="titolo">
+              Costo biglietto
+              <div id="costo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
